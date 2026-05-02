@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartTourism AI — Gobierno de Canarias</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-title">SmartTourism AI</div>
+          <div class="brand-sub">Inteligencia turística y apoyo a la decisión para Canarias</div>
+          <span class="badge">Prototipo ejecutivo</span>
+        </div>
+        <nav class="nav" id="nav"></nav>
+        <div class="download-block" aria-label="Descarga del prototipo">
+          <p><strong>Descargar</strong> versión <strong>todo-en-uno</strong> (un solo HTML, listo para guardar y abrir):</p>
+          <a href="./SmartTourism_AI_descargable.html" download="SmartTourism_AI_descargable.html">SmartTourism_AI_descargable.html</a>
+          <p style="margin-top:0.6rem"><strong>O bien</strong> los tres archivos del proyecto (misma carpeta):</p>
+          <a href="./index.html" download="SmartTourism_AI_index.html">index.html</a>
+          <a href="./styles.css" download="SmartTourism_AI_styles.css">styles.css</a>
+          <a href="./app.js" download="SmartTourism_AI_app.js">app.js</a>
+          <p class="download-hint">El archivo descargable incluye estilos y JavaScript incrustados; los gráficos siguen necesitando Internet (Chart.js). Si renombra los tres archivos sueltos, use <code>index.html</code>, <code>styles.css</code> y <code>app.js</code>.</p>
+        </div>
+        <div class="sidebar-foot">
+          La IA asiste y explica; la decisión final es humana e institucional (human-in-the-loop).
+        </div>
+      </aside>
+      <main>
+        <header class="topbar">
+          <h1 id="pageTitle">Dashboard ejecutivo</h1>
+          <div class="topbar-meta">
+            <span class="pill" id="pillArch">Archipiélago · datos simulados</span>
+            <span class="pill warn" id="pillFocus">Enfoque: valor, no volumen</span>
+          </div>
+        </header>
+        <div class="content" id="app"></div>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
